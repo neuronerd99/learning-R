@@ -1,1 +1,2 @@
-# learning-R
+### Learning R - useful stuff to know
+###
