@@ -1,0 +1,5 @@
+mean(data1)
+median(data1)
+sd(data1)
+sd(data1)/sqrt(length(data1))
+hist(data1)

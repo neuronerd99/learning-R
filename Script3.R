@@ -1,0 +1,7 @@
+libido <- c(3,2,1,1,4,5,2,4,2,3,7,4,5,3,6)
+dose <- gl(3,5,labels = c("Placebo", "Low Dose", "High Dose"))
+viagraData <- data.frame(dose,libido)
+library(car)
+leveneTest(viagraData$libido, viagraData$dose, center=median)
+viagramodel <- aov(libido ~ dose, data=viagraData)
+summary(viagramodel)
